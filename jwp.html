@@ -14,6 +14,16 @@ var sv = getParam("sv");
 body{background:#000000;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif}ol,ul{list-style:none}.wrapper{max-width:700px;padding:10px;margin:0 auto;text-align:center}h1{font-size:24px;line-height:36px;font-weight:600;margin-bottom:15px}h2{font-size:18px;line-height:36px;font-weight:600;margin-bottom:15px}.ULLIST{background:#fff;border:1px solid #c5c5c5;margin-top:2px;-webkit-border-radius:4px;border-radius:4px}.LiList{padding:30px 10px 30px 80px}.android_icon{background:url(*) no-repeat 20px 50%;background-size:45px 45px}.vlc_mobile{background:url(*) no-repeat 20px 50%;background-size:45px 45px}.wuffy_player{background:url(*) no-repeat 20px 50%;background-size:45px 45px}.external_player{background:url(*) no-repeat 20px 50%;background-size:45px 45px}.mx_play{background:url(*) no-repeat 20px 50%;background-size:45px 45px}.ios_icon{background:url(/fichiers/players/images/p_ios.png) no-repeat 20px 50%;background-size:45px 45px}.DVwatch{text-align:right;float:right}.fdd{float:left;font-weight:600;font-size:15px}a{color:#216ba5;text-decoration:none}a:hover{color:#144063;text-decoration:underline}.clearfix{clear:both}
 .PlayerSlct:nth-child(odd){background-color:#000000;margin-top:2px}.PlayerSlct:nth-child(even){margin-top:2px}
 .PlayerSlct{border-bottom:1px solid #808e9b}div.arrow{border-bottom:6px solid transparent;border-top:6px solid transparent;border-left:6px solid #2f2f2f;position:absolute;margin-left:-10px;margin-top:4px}</style>
+
+<script>
+function vlcplay(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent:"+b+"#Intent;package=org.videolan.vlc;S.title=elahmad.com;type=video/mp4;end"}};
+function maxplay(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent:"+b+"#Intent;package=com.mxtech.videoplayer.ad;type=video/mp4;end"}};
+function maxplay_pro(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent:"+b+"#Intent;package=com.mxtech.videoplayer.pro;type=video/mp4;end"}};
+function extplay(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="intent://"+a+"#Intent;action=android.intent.action.VIEW;scheme=http;type=video/*;end"}};
+function intent(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent:"+b+"#Intent;action=android.intent.action.VIEW;scheme=http;type=video/mp4;end"}};
+function wuffy(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+b+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
+
+</script>
 <div id="container">
 </div>
 <script src="https://jwpsrv.com/library/SakQCEfSEeOHhRIxOQfUww.js" type="bd8ef533d50b6a5dc9cdbfd2-text/javascript"></script>
