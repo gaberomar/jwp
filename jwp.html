@@ -1,0 +1,36 @@
+﻿
+
+<script type="7fd48e4e9b637a138f663eba-text/javascript">
+function getParam ( sname )
+{
+  var params = location.search.substr(location.search.indexOf("?")+1);
+  var sval =  params.replace("sv=", "");
+  
+  return sval;
+}
+var sv = getParam("sv");
+</script>
+
+
+<script src="https://cdn.radiantmediatechs.com/rmp/5.10.1/js/rmp-hlsjs.min.js"></script>
+<div style="width:100%; height: auto">
+<div id="rmpPlayer"></div></div>
+<script>
+// Here we set our HLS streaming source
+var src = {
+  dash:  'sv ', 
+};
+var settings = {
+  licenseKey: 'Y21zbWtlYXFvbyEqXyU3OW4yZGU9Yz1vPSsyeWVpP3JvbTVkYXNpczMwZGIwQSVfKg==',
+  src: src,
+    autoHeightMode: true,
+    autoHeightModeRatio: 2.4,
+
+    autoplay: true,
+  contentMetadata: {
+  }
+};
+var elementID = 'rmpPlayer';
+var rmp = new RadiantMP(elementID);
+rmp.init(settings);
+</script>
